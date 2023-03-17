@@ -7,11 +7,11 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.js
-    siteTitle: `Spencer Dean`,
+    siteTitle: `Spencer Dean ✍️`,
     siteTitleAlt: `Spencer Dean - Personal Site`,
     siteHeadline: `Spencer Dean - Personal Site`,
     siteUrl: `https://spencedean.com`,
-    siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
+    siteDescription: `Technical writing, data science, and journalism portfolio.`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
   },
@@ -23,7 +23,7 @@ module.exports = {
         navigation: [
           {
             title: `Work`,
-            slug: `/blog`,
+            slug: `/work`,
           },
           {
             title: `About`,
@@ -55,6 +55,8 @@ module.exports = {
           {
             name: `IBM Plex Sans`,
             file: `https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap`,
+            name: `Nabla`,
+            file: `https://fonts.googleapis.com/css2?family=Nabla&display=swap`
           },
         ],
       },
