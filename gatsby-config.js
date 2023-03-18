@@ -3,6 +3,7 @@ require(`dotenv`).config()
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
+  trailingSlash: `always`,
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
@@ -119,18 +120,16 @@ module.exports = {
                   custom_elements: [{ "content:encoded": content }],
                 }
               }),
-            query: `
-              {
-                allPost(sort: { fields: date, order: DESC }) {
-                  nodes {
-                    title
-                    date(formatString: "MMMM D, YYYY")
-                    excerpt
-                    slug
-                  }
-                }
-              }
-            `,
+            query: `{
+  allPost(sort: {date: DESC}) {
+    nodes {
+      title
+      date(formatString: "MMMM D, YYYY")
+      excerpt
+      slug
+    }
+  }
+}`,
             output: `rss.xml`,
             title: `Minimal Blog - @lekoarts/gatsby-theme-minimal-blog`,
           },
